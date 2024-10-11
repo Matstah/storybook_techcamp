@@ -28,3 +28,12 @@
   padding: 12px 24px;
   font-size: 16px;
 }
+
+.storybook-button {
+  transition: transform 0.2s ease; /* Smooth transition effect */
+}
+
+.storybook-button:active {
+  transform: scale(0.95); /* Scale the button down when clicked */
+}
+
