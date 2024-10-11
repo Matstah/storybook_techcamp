@@ -1,3 +1,6 @@
+# Run Storybook webapp
+Run `npm run storybook` to start the Storybook app. Navigate to `http://localhost:6006/`. The application will automatically reload if you change any of the source files.
+
 # AngularLatest
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.8.
