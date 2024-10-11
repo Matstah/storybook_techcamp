@@ -6,6 +6,8 @@ import { Store, NgxsModule } from "@ngxs/store";
 import { TasksState } from "../../state_matthias/task.state";
 import { moduleMetadata, applicationConfig } from "@storybook/angular";
 
+import { fireEvent, within } from '@storybook/test';
+
 import PureInboxScreenComponent from "./pure-inbox-screen.component";
 
 import { TaskModule } from "../task.module";
@@ -32,5 +34,15 @@ export const Default: Story = {};
 export const Error: Story = {
   args: {
     error: true,
+  },
+};
+
+export const WithInteractions: Story = {
+  play: async ({ canvasElement }) => {
+    const canvas = within(canvasElement);
+    // Simulates pinning the first task
+    await fireEvent.click(canvas.getByLabelText('pinTask-1'));
+    // Simulates pinning the third task
+    await fireEvent.click(canvas.getByLabelText('pinTask-3'));
   },
 };
