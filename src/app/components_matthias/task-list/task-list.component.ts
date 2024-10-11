@@ -8,8 +8,8 @@ import { Observable } from "rxjs";
   template: `
     <app-pure-task-list
       [tasks]="tasks$ | async"
-      (onArchiveTask)="archiveTask($event)"
-      (onPinTask)="pinTask($event)"
+      (onArchiveTask)="archiveTask($any($event))"
+      (onPinTask)="pinTask($any($event))"
     ></app-pure-task-list>
   `,
 })

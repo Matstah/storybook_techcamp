@@ -9,8 +9,8 @@ import { Task } from "../../models_matthias/task.model";
       <app-task
         *ngFor="let task of tasksInOrder"
         [task]="task"
-        (onArchiveTask)="onArchiveTask.emit($event)"
-        (onPinTask)="onPinTask.emit($event)"
+        (onArchiveTask)="onArchiveTask.emit($any($event))"
+        (onPinTask)="onPinTask.emit($any($event))"
       >
       </app-task>
 
