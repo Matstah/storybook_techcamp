@@ -1,17 +1,9 @@
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component } from "@angular/core";
 
 @Component({
-  selector: 'app-root',
-  standalone: true,
-  imports: [RouterOutlet],
-  template: `
-    <h1>Welcome to {{title}}!</h1>
-
-    <router-outlet />
-  `,
-  styles: [],
+  selector: "app-root",
+  template: ` <app-inbox-screen></app-inbox-screen> `,
 })
 export class AppComponent {
-  title = 'angular-latest';
+  title = "taskbox";
 }
