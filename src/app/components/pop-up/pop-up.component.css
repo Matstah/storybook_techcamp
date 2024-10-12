@@ -1,0 +1,84 @@
+.pop-up-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pop-up-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 3em; /* Match button styling for rounded corners */
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 12px; /* Added shadow for depth */
+    max-width: 400px; /* Limit width for consistency with login mask */
+    width: 90%; /* Responsive width */
+}
+
+.pop-up-content h2 {
+    font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Consistent font family */
+    margin-bottom: 20px; /* Space below the title */
+}
+
+.pop-up-content button {
+    padding: 12px 24px; /* Match button sizes */
+    background-color: #1ea7fd; /* Primary button color */
+    color: white;
+    border: none;
+    border-radius: 3em; /* Rounded corners for the close button */
+    cursor: pointer;
+    font-weight: 700; /* Match button font weight */
+    transition: transform 0.2s ease; /* Smooth transition effect */
+}
+
+.pop-up-content button:hover {
+    background-color: #17a2b8; /* Lighter blue on hover */
+}
+
+.pop-up-content button:active {
+    transform: scale(0.95); /* Scale down when clicked */
+}
+
+
+.popup {
+    background-color: white; /* Change to white for a cleaner look */
+    border: 1px solid #ccc;  /* Lighter border for better contrast */
+    padding: 20px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    display: flex;                  /* Enable flexbox */
+    flex-direction: column;         /* Arrange children in a column */
+    align-items: center;            /* Center children horizontally */
+    justify-content: center;        /* Center children vertically */
+    text-align: center;             /* Center text */
+    border-radius: 2em;            /* Match button styling for rounded corners */
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 12px; /* Add shadow for depth */
+}
+
+button {
+    padding: 12px 24px;           /* Match padding to primary buttons */
+    background-color: #1ea7fd;    /* Use the same primary color as buttons */
+    color: white;
+    border: none;                  /* No border */
+    border-radius: 3em;           /* Match button styling */
+    cursor: pointer;
+    font-weight: 700;              /* Bold text */
+    transition: transform 0.2s ease; /* Smooth transition effect */
+    margin-top: 10px;              /* Add spacing above the button */
+}
+
+button:hover {
+    background-color: #17a2b8;      /* Change color on hover */
+}
+
+button:active {
+    transform: scale(0.95);         /* Scale down when clicked */
+}
